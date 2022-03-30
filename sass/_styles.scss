@@ -3,6 +3,12 @@ html {
   height: 100%;
 }
 
+a,
+button,
+img {
+  display: block;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #f3f5f9;
@@ -14,13 +20,26 @@ body {
   background-color: lightgray;
 }
 
+.container {
+  width: 480px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+}
+
+.container--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .wrapper {
   background-color: aqua;
 
-  width: 480px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -29,11 +48,15 @@ body {
 }
 
 .page__header {
-  display: flex;
+  // display: flex;
+  padding: 15px 0;
 }
 
 .menu_btn {
-  margin-left: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .foxie__btn {
