@@ -1,3 +1,24 @@
+// menu toggle
+(() => {
+  const refs = {
+    openMenuBtn: document.querySelector('.btn-open'),
+    closeMenuBtn: document.querySelector('.btn-close'),
+    menu: document.querySelector('.page-menu'),
+  };
+
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
+
+  function toggleMenu() {
+    refs.menu.classList.toggle('page-menu--hidden');
+    // if (document.body.style.overflowY === 'scroll' || document.body.style.overflowY === '') {
+    //   document.body.style.overflowY = 'hidden';
+    // } else {
+    //   document.body.style.overflowY = 'scroll';
+    // }
+  }
+})();
+// foxies
 const foxAlive = 10;
 const foxDead = 11;
 
